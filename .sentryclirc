@@ -1,0 +1,7 @@
+[auth]
+token=7bd0a0b57bb147ca9d7c682b3851f3ff98c343888f244c3ba77cf82e6ea1e7c6
+
+[defaults]
+project=sass-healthmanage-statics
+url=https://sentry.lifesense.com/
+org=ls-frontend
