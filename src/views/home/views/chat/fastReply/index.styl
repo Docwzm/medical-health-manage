@@ -1,0 +1,53 @@
+.fast-replay-con
+    position absolute
+    right 20px
+    top 20px
+    .fast-replay-btn
+        font-size 14px
+        color #20A0FF
+        position relative
+        padding-right 20px
+        width 60px
+        line-height 20px
+        cursor pointer
+        .icon
+            display inline-block
+            position absolute
+            right 0
+            top 0
+            font-family element-icons!important
+            speak none
+            -webkit-font-smoothing antialiased
+            color #20A0FF
+            font-size 12px
+            &:before
+                content "\E604"
+        .icon-open
+            &:before
+                content "\E607"
+    .fast-replay-list
+        position absolute
+        width 450px
+        right 0
+        bottom 30px
+        background #FFF
+        border 1px solid #d9e0e8
+        box-shadow 0 2px 4px rgba(0,0,0,0.12), 0 0 6px rgba(0,0,0,0.04)
+        max-height 216px
+        padding 5px 0
+        overflow auto
+        z-index 2
+        .item
+            line-height 36px
+            padding 0 10px
+            color #000
+            font-size 14px
+            cursor pointer
+            &:hover
+                color #FFF
+                background #20A0FF
+        .item2
+            color #20a0ff
+            &:hover
+                color #20a0ff
+                background #FFF

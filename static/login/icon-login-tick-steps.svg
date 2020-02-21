@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="16px" viewBox="0 0 20 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-login-tick-steps</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="医生模块" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M1.94586596,7.23695975 L6.69722076,10.8882265 L18.3596371,0.372578238 C18.3596371,0.372578238 19.0795393,-0.357675105 19.7994416,0.226527564 C19.943422,0.372578238 20.231383,0.810730259 19.6554611,1.5409836 L7.41712302,15.4157973 C7.41712302,15.4157973 6.40925988,16.7302534 5.40139672,15.4157973 L0.218100566,8.69746646 C0.218100566,8.69746646 -0.357821241,7.82116244 0.362081017,7.23695975 C0.65004192,6.9448584 1.2259637,6.65275705 1.94586596,7.23695975 L1.94586596,7.23695975 Z" id="icon-login-tick-steps" fill="#20A0FF" fill-rule="nonzero"></path>
+    </g>
+</svg>

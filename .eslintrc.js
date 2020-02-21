@@ -8,6 +8,7 @@ module.exports = {
     browser: true,
   },
   rules: {
+    'experimentalDecorators':'off',
     // allow paren-less arrow functions
     'arrow-parens': 0,
     // allow debugger during development

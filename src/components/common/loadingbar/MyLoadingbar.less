@@ -1,0 +1,28 @@
+.my-loadingbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2147483647;
+  opacity: 0;
+  transition: opacity 0.4s linear 0.4s;
+
+  .progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 2px;
+    //background: #77b6ff;
+    //box-shadow: 0 0 10px rgba(119, 182, 255, 0.7);
+    //background: #b91f1f;
+    //box-shadow: 0 0 10px rgba(185, 31, 31, 0.7);
+    background: rgb(255, 255, 255);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+  }
+
+}
+
+.is-loading {
+  opacity: 1;
+  transition: none;
+}
+

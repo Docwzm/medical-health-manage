@@ -8,9 +8,18 @@
     }],
     "stage-2"
   ],
-  "plugins": ["transform-vue-jsx",
-              "transform-runtime",
-              "syntax-dynamic-import",
-              ["import", { "libraryName": "ant-design-vue", "libraryDirectory": "es", "style": "css" }]
+  "plugins": [
+    "transform-decorators-legacy",
+    "transform-runtime",
+    "transform-vue-jsx",
+    [
+      "component",
+      [
+        {
+          "libraryName": "element-ui",
+          "styleLibraryName": "theme-default"
+        }
+      ]
+    ]
   ]
 }

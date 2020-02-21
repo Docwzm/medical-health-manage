@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-top-head</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#DCDCDC" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="0" y="0" width="30" height="30" rx="15"></rect>
+        <mask id="mask-3" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="30" height="30" fill="white">
+            <use xlink:href="#path-2"></use>
+        </mask>
+        <mask id="mask-5" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="30" height="30" fill="white">
+            <use xlink:href="#path-2"></use>
+        </mask>
+    </defs>
+    <g id="首页" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-7">
+            <mask id="mask-4" fill="white">
+                <use xlink:href="#path-2"></use>
+            </mask>
+            <g id="Rectangle-5" stroke="#B8B8B8" mask="url(#mask-3)" stroke-width="2" fill="url(#linearGradient-1)">
+                <use mask="url(#mask-5)" xlink:href="#path-2"></use>
+            </g>
+            <path d="M27.7990289,32.6666667 C27.4067227,30.8202428 26.6599066,27.6978898 26.6599066,27.6978898 C26.6599066,27.6978898 26.2608777,25.761606 25.6288702,25.1015873 C24.5373296,23.961606 17.7561158,23.0019421 17.4894491,20.958282 C17.4169188,20.4028758 17.3948833,19.4302148 17.4154622,19.1934267 C17.9713165,18.6919888 18.4202428,18.0448179 18.5281793,17.8595331 C18.6631186,17.6271148 18.9394585,16.9760224 19.1507003,16.1673203 C19.5019981,16.1257516 19.8203548,15.4753688 20.0546405,14.7586181 C20.305733,13.9872642 20.1154809,13.3119328 19.7590663,13.1874883 C20.0029879,12.1646685 20.2081419,10.4968067 19.6101214,9.1815873 C19.339197,8.58521008 19.9634734,7.38450047 18.8314846,6.07555556 C17.8611765,7.53213819 14.9958543,5.20388422 12.7869281,6.31861811 C11.8772736,6.77759104 11.4982633,7.45848739 11.3616807,8.12343604 C10.6338375,8.70920635 10.4558357,9.45310924 10.3594024,9.90946779 C10.1087955,11.0970308 10.0702521,12.1404295 10.3955929,13.2244258 C10.0962465,13.4199066 9.95660131,14.0513165 10.1869655,14.7586181 C10.4206909,15.4753688 10.7394585,16.1254528 11.0901961,16.1673203 C11.3014379,16.9760224 11.5784874,17.6271148 11.7132773,17.8595331 C11.8282726,18.0575163 12.3320261,18.7833053 12.9409897,19.2945285 L12.9664986,19.2945285 C12.9656396,19.6938189 12.9397946,20.5417367 12.8855275,20.958282 C12.6188609,23.0019421 5.80130719,23.9252661 4.74610644,25.1015873 C4.17654528,25.7362092 2.65340803,31.3511485 2.33333333,32.6666667 L27.7990289,32.6666667 L27.7990289,32.6666667 Z" id="iconfont-touxiang" fill="#B8B8B8" mask="url(#mask-4)"></path>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,64 @@
+.my_table {
+  .el-dialog {
+    padding: 20px;
+  }
+  .el-table__body-wrapper {
+    overflow-x: hidden;
+  }
+  .el-table--striped .el-table__body tr:nth-child(2n) td {
+    background-color: #f9fafc;
+  }
+  .el-table__header-wrapper {
+    tr {background-color: #e5e9f2;}
+    th {
+      height: 44px;
+      background-color: #e5e9f2;
+      div {
+        background-color: #e5e9f2;
+      }
+    }
+  }
+  &.noHead {
+    .el-table__header-wrapper {
+      display: none;
+    }
+  }
+  .el-table__body-wrapper {
+    td {
+      height: 46px;
+    }
+    .cell {
+      height: auto;
+      line-height: 46px;
+    }
+    .boxTi {
+      b {
+        font-weight: bold;
+      }
+    }
+    .activeBar {
+      white-space: nowrap;
+      position: relative;
+      margin: 0 auto;
+      width: 110px;
+      &:after {
+        content: "|";
+        display: inline-block;
+        color: #e5e9f2;
+        height: 40px;
+        width: 1px;
+        position: absolute;
+        left: 64px;
+        top: 4px;
+      }
+    }
+  }
+}
+
+.el-table td.is-center, .el-table th.is-center {
+  text-align: left !important;
+}
+.el-table th>.cell {
+  font-weight:normal;
+  color:#666;
+}

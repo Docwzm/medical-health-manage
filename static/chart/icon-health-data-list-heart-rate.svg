@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44 (41411) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-health-data-list-heart-rate</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="医生账户" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M0,20 C0,8.954305 8.95187636,0 20,0 C31.045695,0 40,8.95187636 40,20 C40,31.045695 31.0481236,40 20,40 C8.954305,40 0,31.0481236 0,20 Z M30,16.9541927 C30,13.6662734 27.5237632,11 24.4696479,11 C22.6305628,11 21.0057177,12.050126 19.9996621,13.5372931 C18.9940116,12.050126 17.3691672,11 15.5298121,11 C12.476203,11 10,12.8605762 10,16.9541927 C10,22.649027 17.9640286,28.0514694 17.9640286,28.0514694 C19.076842,28.9271759 20.9003258,28.8985622 22.0113503,28.0248872 C22.0113503,28.0248872 30,22.3887964 30,16.9541927 Z" id="icon-health-data-list-heart-rate" fill="#FF7A60"></path>
+    </g>
+</svg>

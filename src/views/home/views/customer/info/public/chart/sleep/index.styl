@@ -1,0 +1,75 @@
+.chart_sleep_statis
+  position relative
+  .sleep_chart_layer
+    width 100%
+  .sleep_statis_layer
+    width 910px
+    margin 0 20px
+    >.sleep_statis_item
+      display inline-block
+      width 50%
+      text-align center
+      box-sizing border-box
+      &:nth-child(2)
+        border-left 1px solid #d8d8d8
+      div
+        display inline-block
+        vertical-align middle
+        img
+          width 50px
+          height 50px
+        &:last-child
+          margin-left 30px
+        >span
+          display block
+          font-size 14px
+          color #000000
+          text-align left
+          .num
+            font-size 18px
+          &:last-child
+            margin-top 8px
+            span:not(:first-child)
+              margin-left 6px
+    >.sleep_static_item_cate
+      width 33.3%
+      display inline-block
+      text-align center
+      .sleep_static_item_cate_color
+        width 20px
+        height 20px
+        border-radius 2px
+        background-color #5C2AAB
+        display inline-block
+      &:nth-child(4)
+        .sleep_static_item_cate_color
+          background-color #9E82FF
+      &:nth-child(5)
+        .sleep_static_item_cate_color
+          background-color #DD53AC
+      >span
+        display block
+        font-size 14px
+        .num
+          font-size 18px
+        &:first-child
+          margin-top 30px
+          margin-bottom 5px
+          span:not(:first-child)
+            margin-left 6px
+        &:last-child
+          span
+            vertical-align middle
+            &:not(:first-child)
+              margin-left 6px
+  .sleep_chart_timeaxis
+    font-size 12px
+    position relative
+    margin-top -45px
+    margin-bottom 45px
+    >span:first-child
+      float left
+      margin-left 58px
+    >span:last-child
+      float right
+      margin-right 50px

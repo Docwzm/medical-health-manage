@@ -1,0 +1,27 @@
+.my-nav {
+  height: 50px;
+  background-color: #fff;
+  //font-family: "simsun, Microsoft YaHei";
+  padding-left: 20px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #E7E7E7;
+  & span , & a{
+    line-height: 50px;
+    font-size: 14px;
+    color: #000;
+    cursor: pointer;
+    &:after {
+      content: '/';
+      color: #ccc;
+      margin: 0 10px;
+    }
+    &:hover {
+      color: #20a0ff;
+    }
+    &:last-child {
+      &:after {
+        content: '';
+      }
+    }
+  }
+}

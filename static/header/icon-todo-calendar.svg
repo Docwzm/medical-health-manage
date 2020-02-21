@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="21px" height="20px" viewBox="0 0 21 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-todo-calendar</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="首页" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M11,10 L11,2.99539757 C11,2.4556644 10.5522847,2 10,2 C9.44386482,2 9,2.44565467 9,2.99539757 L9,11.0046024 C9,11.2739853 9.11152791,11.5224262 9.29192076,11.7037251 C9.47382495,11.8896448 9.72246694,12 9.99703014,12 L16.0029699,12 C16.5469637,12 17,11.5522847 17,11 C17,10.4438648 16.5536144,10 16.0029699,10 L11,10 Z M10.25,20 C15.7728475,20 20.25,15.5228475 20.25,10 C20.25,4.4771525 15.7728475,0 10.25,0 C4.7271525,0 0.25,4.4771525 0.25,10 C0.25,15.5228475 4.7271525,20 10.25,20 Z" id="Combined-Shape" fill="#20A0FF"></path>
+    </g>
+</svg>

@@ -1,0 +1,98 @@
+.my-input.my_textarea {
+  & textarea {
+    width: 300px;
+    height: 200px;
+    box-sizing: border-box;
+    padding: 10px 10px 30px 10px;
+    margin: 0 auto;
+    font-size: 14px;
+    font-family: Microsoft YaHei, SimSun, Hiragino Sans GB, Arial, sans-serif;
+  }
+}
+
+.my-input.win200.el-input-group {
+  width: 200px;
+}
+.my-input.win80 {
+  width: 80px;
+}
+.my-input.win200 {
+  width: 200px;
+}
+.my-input.win120 {
+  width: 120px;
+}
+.my-input.win252 {
+  width: 252px;
+}
+
+.my-input.infoLeft {
+  & textarea {
+    width: 218px;
+    height: 200px;
+    border: 0 none;
+    box-sizing: border-box;
+    padding: 10px 10px 30px 10px;
+    margin: 0 auto;
+    font-size: 14px;
+    font-family: Microsoft YaHei, SimSun, Hiragino Sans GB, Arial, sans-serif;
+  }
+}
+
+.my_form_item.el-form-item.is-error .el-input__inner, .el-form-item.is-error .el-textarea__inner {
+  border-color: #ff4949!important;
+}
+.my_form_item.el-form-item.is-error {
+  .my-input.el-input.el-input-group {
+    border-color: #ff4949!important;
+  }
+}
+.my-input {
+  &.is-disabled {
+    .el-input__inner{
+      background-color: #f9fafc !important;
+      color: #666 !important;
+      font-size: 14px;
+      &::-webkit-input-placeholder {
+        color: #f9fafc !important;
+        position: fixed!important;
+        top: -1000px!important;
+      }
+    }
+    &.el-input-group--append {
+      .el-input-group__append {
+        background-color: #f9fafc !important;
+      }
+    }
+  }
+  & .el-input__inner {
+    border: 1px solid #c0ccda !important;
+    background-color: #fff !important;
+    border-radius: 4px !important;
+  }
+  & .el-input__inner:focus {
+    outline: 0;
+    border-color: #20a0ff !important;
+  }
+  &.el-input-group {
+    width: 169px;
+    box-sizing: border-box;
+    border: 1px solid #C0CCDA;
+    border-radius: 4px;
+    &:focus {
+      outline: 0;
+      border-color: #20a0ff !important;
+    }
+    .el-input__inner {
+      border: 0 none !important;
+    }
+    &.el-input-group--append {
+      .el-input-group__append {
+        background-color: transparent;
+        border: 0 none;
+        line-height: 36px;
+        border-radius: inherit;
+      }
+    }
+  }
+}

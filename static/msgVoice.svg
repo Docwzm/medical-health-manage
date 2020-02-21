@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-message-voice-doctor</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="对话" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-18" transform="translate(15.000000, 15.000000) scale(-1, 1) translate(-15.000000, -15.000000) " stroke="#20A0FF" stroke-width="2">
+            <path d="M5.80645161,16.4516129 C5.80645161,15.7086126 5.52300656,14.9656123 4.95611646,14.3987222 C4.38922636,13.8318321 3.64622608,13.5483871 2.90322581,13.5483871 L2.90322581,16.4516129 L5.80645161,16.4516129 Z" id="Combined-Shape" fill="#20A0FF" transform="translate(4.354839, 15.000000) rotate(45.000000) translate(-4.354839, -15.000000) "></path>
+            <path d="M3.87096774,8.70967742 C3.87096774,15.1233068 9.07024162,20.3225806 15.483871,20.3225806 L15.483871,20.3225806" id="Oval-9" transform="translate(9.677419, 14.516129) scale(-1, 1) rotate(45.000000) translate(-9.677419, -14.516129) "></path>
+            <path d="M4.83870968,4.83870968 C4.83870968,16.062561 13.937439,25.1612903 25.1612903,25.1612903" id="Oval-9-Copy" transform="translate(15.000000, 15.000000) scale(-1, 1) rotate(45.000000) translate(-15.000000, -15.000000) "></path>
+        </g>
+    </g>
+</svg>

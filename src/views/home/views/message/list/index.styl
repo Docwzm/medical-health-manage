@@ -1,0 +1,115 @@
+.doctor-message-list
+  //标签
+  .doctor-message-tab
+    width 246.5px
+    border-right 1px solid #e7e7e7
+    &.last-message-tab
+      width 247.5px
+      border-right 0
+   //主体
+  .doctor-message-pane-content
+    padding 10px 20px 25px 20px
+    //搜索
+    >.search
+      padding-bottom 20px
+      .search-select
+      .search-input
+        width 200px
+        margin-right 25px
+      .search-btn
+        display inline-block
+        width 36px
+        line-height 36px
+        height 36px
+        text-align center
+        background-color #40AAFF
+        background-position center
+        background-repeat no-repeat
+        border-radius 5px
+        cursor pointer
+        vertical-align top
+        background-image url("../../../../../../static/customer/icon-search.svg")
+      .date-input
+        width 240px
+        margin-right 25px
+     //分页
+    .doctor-message-pane-pagination
+      text-align right
+      margin-top 20px
+    .search-handle
+      height 20px
+      color #A5A5A5
+      font-size 14px
+      padding 10px 0
+      cursor pointer
+      border-bottom 1px solid #e7e7e7
+      .on
+        color #20a0ff
+      .sep
+        color #D8D8D8
+        font-size 12px
+        padding 0 5px
+        cursor default
+      >.handle-left
+        float left
+      >.handle-right
+        float right
+    //暂无数据
+    .search-result-nodata-layer
+      line-height 60px
+      text-align center
+      color #5e7382
+      font-size 14px
+    //搜素结果
+    .search-result
+      li
+        padding 20px 0
+        font-size 14px
+        border-bottom 1px solid #e7e7e7
+        img.search-item-portrait
+          width 60px
+          height 60px
+          vertical-align middle
+          border-radius 50%
+          &.click-span
+            cursor pointer
+        div.search-item-message,
+        div.search-item-handle
+          display inline-block
+          vertical-align middle
+          >div:last-child
+            padding-top 10px
+          .on-span
+            color #20a0ff
+            cursor pointer
+          .gray-span
+            color #A5A5A5
+            //cursor default
+          &.click-span,
+          .click-span
+            cursor pointer
+        div.search-item-message
+          width calc( 100% - 255px )
+          padding-left 20px
+          >div:first-child
+            >span:not(:first-child)
+              margin-left 20px
+          >div:last-child
+            white-space nowrap
+            overflow hidden
+            text-overflow ellipsis
+            >span:not(:first-child)
+              margin-left 10px
+        div.search-item-handle
+          width 160px
+          text-align right
+          >div:last-child
+            >span:not(:first-child)
+                margin-left 20px
+
+  //弹框
+  .message-exception-detail-dialog
+    .doctor-message-dialog-pagination
+      text-align right
+      margin-top 10px
+

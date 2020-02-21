@@ -1,0 +1,52 @@
+.left_layout
+  width 199px
+  overflow-y auto
+  height 100%
+  background-color #FFF
+  border-right 1px solid #E7E7E7
+  .el-menu
+    padding-top 0
+    background-color #FFF
+    .el-menu-item
+      border-bottom 1px solid #EBE9E9
+    .name
+      position absolute
+      left 70px
+      top 0
+      font-weight normal
+      color #000
+  .el-menu-item-group
+    border-bottom 1px solid #EBE9E9
+    position relative
+    background-color #FFF
+    .el-menu-item
+      border-bottom none
+    .el-menu-item-group__title
+      padding 0 0 0 70px !important
+      line-height 50px
+      color #A9A9A9
+      font-weight normal
+  .el-menu-item-group:last-child
+      border-bottom none
+  svg
+    position absolute
+    left 30px
+    top 15px
+    height 20px
+    width 20px
+  .el-menu-item
+    height 50px
+    line-height 50px
+    padding-left 70px !important
+    color #000
+    font-weight normal
+    &:hover
+      background-color transparent
+  .is-active, .is-active:hover,.el-menu-item.is-active
+    background-color #40AAFF
+    color #FFF
+    .name
+      color #FFF
+    svg
+      *
+        fill #FFF

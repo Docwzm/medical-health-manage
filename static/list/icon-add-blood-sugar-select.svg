@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="18px" viewBox="0 0 20 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-add-blood-sugar-select</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="医生账户" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M20,0 L20,14.0052166 C20,16.2114745 18.2075324,18 16.00077,18 L0,18 L20,0 Z" id="Rectangle-93" fill="#20A0FF"></path>
+        <path d="M9.86069431,11.6537391 C9.66945693,11.4545334 9.35294035,11.4480739 9.15373474,11.6393113 C8.95452913,11.8305487 8.94806961,12.1470653 9.13930699,12.3462709 L11.539307,14.8462709 C11.7256757,15.0404049 12.0322677,15.0522067 12.2330085,14.8729738 L17.8330085,9.8729738 C18.0389935,9.68905862 18.0568847,9.37298208 17.8729695,9.16699708 C17.6890543,8.96101208 17.3729778,8.94312096 17.1669928,9.12703613 L11.926721,13.8058502 L9.86069431,11.6537391 Z" id="Path-2" fill="#FFFFFF" fill-rule="nonzero"></path>
+    </g>
+</svg>

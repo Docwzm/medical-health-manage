@@ -1,0 +1,79 @@
+.admin-layout,.user-layout
+    .reset_dialog
+        .el-dialog__header
+            padding 0
+            height 50px
+            line-height 50px
+            position relative
+            border-bottom 1px solid #E7E7E7
+            margin 0 20px
+        .el-dialog__body
+            padding 30px 20px 20px
+        .el-dialog--tiny
+            width 520px
+            border-radius  4px
+        .el-dialog__title
+            font-size 18px
+            color #000
+            font-weight normal
+        .el-dialog__headerbtn
+            position absolute
+            right 0
+            top 0
+            font-size 14px
+        .list
+            position relative
+        .item
+            list-style none
+            margin-bottom 30px
+            display -webkit-flex
+            display flex
+            -webkit-justify-content center
+            justify-content center
+            -webkit-align-items center
+            align-items center
+        .item:last-child
+            border-top 1px solid #E7E7E7
+            padding-top 20px
+            margin-bottom 0
+            .el-button
+                width 88px
+        .label_name
+            color #000
+            margin-right 12px
+            font-weight normal
+        .el-input
+            width 238px
+        .el-button+.el-button
+            margin-left 20px
+        .error_tips
+            position absolute
+            left 164px
+            bottom 48px
+            color #FF4D4D
+            font-weight normal
+        .input_error
+            .el-input__inner
+                border-color #FF4949 !important
+                box-shadow 0 0 0 1px #FF4949 inset
+    .reset_dialog_success
+        .list
+            padding-top 200px
+        .tips
+            position absolute
+            top 60px
+            width 100%
+            left 0
+            text-align center
+            .con
+                display inline-block
+                line-height 40px
+                padding-left 60px
+                background url('../../../../static/header/icon-success.svg') no-repeat 0 center / auto 100%
+                color #000
+.admin-layout
+    .message,.tool
+        .item
+            &:hover
+                *
+                    fill #40AAFF

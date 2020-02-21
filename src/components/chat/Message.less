@@ -1,0 +1,52 @@
+.message {
+  text-align: left;
+  //line-height: 1.8;
+  white-space: normal;
+  word-break: break-all;
+  .img_box {
+    height: 200px;
+    margin: 0 -20px;
+    img {
+      height: 200px;
+      width: auto;
+      max-width: 100%;
+      border-radius: 4px;
+    }
+  }
+  .sound_box {
+    .audio, .audioPlay {
+      display: inline-block;
+      width: 60px;
+      background-repeat: no-repeat;
+      background-size: 30px;
+      cursor: pointer;
+    }
+
+  }
+}
+
+.right .msgBox .message .sound_box {
+  .audio, .audioPlay {
+    text-align: left;
+    background-position: center right;
+  }
+  .audio {
+    background-image: url("../../../static/msgVoice.svg");
+  }
+  .audioPlay {
+    background-image: url("../../../static/icon-message-voice-doctor.gif");
+  }
+}
+
+.left .msgBox .message .sound_box {
+  .audio, .audioPlay {
+    text-align: right;
+    background-position: center left;
+  }
+  .audio {
+    background-image: url("../../../static/msgVoiceDef.svg");
+  }
+  .audioPlay {
+    background-image: url("../../../static/icon-message-voice-patient.gif");
+  }
+}

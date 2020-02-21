@@ -1,0 +1,16 @@
+borderPointer(leftPos,topPos,size,color)
+  &:after
+    content ''
+    display block
+    position absolute
+    top topPos
+    z-index 101
+    left leftPos
+    width size
+    height size
+    background #fff
+    border-top 1px solid color
+    border-right 1px solid color
+    transform rotate(-45deg)
+
+

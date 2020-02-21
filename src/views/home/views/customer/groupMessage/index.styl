@@ -1,0 +1,167 @@
+.messageDialog
+    .tips
+        position absolute
+        right 100px
+        bottom 10px
+        color #A5A5A5
+        font-size 12px
+    .el-dialog__body
+        padding 0
+        color #000
+    .el-dialog--tiny
+        width 750px
+        border-radius 4px
+    .el-dialog__header
+        position relative
+        padding 0
+        margin 0 20px
+        height 50px
+        line-height 50px
+        border-bottom 1px solid #C9D2DC
+    .el-dialog__title
+        font-size 18px
+        font-weight normal
+        color #000
+    .el-dialog__headerbtn
+        position absolute
+        top 0
+        right 0
+        font-size 14px
+    .form_detail
+        padding-top 10px
+        .form_item
+            margin-top 30px
+            position relative
+            &:after
+                content: ""
+                clear both
+                display block
+                height 0
+            .label
+                float left
+                width 150px
+                text-align right
+                font-size 14px
+                line-height 36px
+                margin-right 10px
+                color #000
+            .detail
+                float left
+                width 500px
+            .send_users
+                border 1px solid #C9D2DC
+                border-radius 5px
+                padding 0 5px 5px
+                overflow hidden
+                min-height 30px
+                width 488px
+                .item
+                    float left
+                    margin 5px 5px 0 0
+                    line-height 23px
+                    padding 0 25px 0 5px
+                    border 1px solid #CBE6FF
+                    background #EDF6FF
+                    position relative
+                    color #4CB0FF
+                    font-size 12px
+                    .close
+                        position absolute
+                        right 2px
+                        top 3px
+                        cursor pointer
+                        font-size 16px
+                        font-family cursive
+                        transform rotate(-2deg)
+                        font-family element-icons!important
+                        width 18px
+                        height 18px
+                        line-height 18px
+                        font-size 12px
+                        transform scale(.75)
+                        text-align center
+                        border-radius 50%
+                        &:before
+                            content "\E60C"
+                        &:hover
+                            background #20a0ff
+                            color #FFF
+            .textarea
+                width 500px
+                font-size 14px
+                color #000
+            .textarea_error
+                .el-textarea__inner,.el-input__inner
+                    border-color #ff4d4d
+            .textarea_error_tips
+                position absolute
+                left 160px
+                bottom -25px
+                color #ff4d4d
+        .form_footer
+            text-align center
+            margin 30px 20px 0
+            border-top 1px solid #C9D2DC
+            padding 20px 0 20px
+            .el-button
+                width 88px
+            .el-button+.el-button
+                margin-left 30px
+    .log_search
+        display -webkit-flex
+        display flex
+        -webkit-align-items center
+        align-items center
+        padding 20px
+        overflow hidden
+        position relative
+        .serach_input
+            width 160px
+            margin 0 40px 0 10px
+            display inline-block
+            vertical-align middle
+        .search_time
+            width 220px
+            margin 0 0 0 10px
+            display inline-block
+            vertical-align middle
+        .search_btn
+            position absolute
+            right 0
+            top 20px
+            width 36px
+            height 36px
+            background #40AAFF url('../../../../../../static/customer/icon-search.svg') no-repeat 0 0 / 100%
+            border-radius 5px
+    .page_con
+        text-align right
+        padding 20px 0 0
+    .message_detail
+        width 500px
+        margin 0 auto
+        padding 60px 0 0
+        td
+            padding 15px 10px
+.el-message-box .el-message-box__content
+    color #000
+.group-message-box
+    width 416px
+    border-radius 10px
+    .el-message-box__header
+        padding 40px 0 0 80px
+        color #000
+        font-size 18px
+    .el-message-box__close
+        display none
+    .el-message-box__content
+        padding-top 20px
+    .el-message-box__status
+        top -6px
+        left 40px
+        font-size 24px !important
+    .el-message-box__message
+        padding 0 40px 0 10px
+    .el-message-box__btns
+        padding 0 40px 30px 0
+    .el-message-box__btns button:nth-child(2)
+        margin-left 30px

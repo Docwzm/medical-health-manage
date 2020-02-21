@@ -1,0 +1,71 @@
+.my-tabs {
+  //display: block !important;
+  //.el-tabs__header {
+  //  margin: 0;
+  //  .el-tabs__active-bar {
+  //    display: none !important;
+  //  }
+  //  .el-tabs__item {
+  //    position: relative;
+  //    min-width: 154px;
+  //    text-align: center;
+  //    bottom: -1px;
+  //    margin: 0 4px 0 0;
+  //    border: 1px solid #C0CCDA;
+  //    border-bottom: 1px solid #d3dce6;
+  //    font-size: 18px;
+  //    border-radius: 6px 6px 0 0;
+  //    color: #999;
+  //    padding: 0 40px !important;
+  //    background-color: #f2f2f2;
+  //    &.is-active {
+  //      background-color: #fff !important;
+  //      color: #20a0ff !important;
+  //      border: 1px solid #20a0ff!important;
+  //      border-bottom: none !important;
+  //      margin-bottom: -1px/0;
+  //    }
+  //  }
+  //}
+
+  &.flex {
+    .el-tabs__header {
+      margin: 0;
+    }
+    .el-tabs__nav {
+      width: 100%;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-around;
+    }
+    .el-tabs__active-bar {
+      position: absolute;
+      top: 0;
+    }
+    .el-tabs__item{
+      flex: 1 1 auto;
+      text-align: center;
+      font-size: 18px;
+      color: #999;
+      height: 51px;
+      line-height: 51px;
+      font-weight: 400;
+      //border-bottom: 1px solid #e7e7e7;
+      background-color: #f9f9f9;
+      border: 1px solid #e7e7e7;
+      &:first-child {
+        border-left: 0 none;
+      }
+      &:last-child {
+        border-right: 0 none;
+      }
+      &.is-active {
+        color: #20A0FF;
+        background-color: #fff;
+        font-weight: bold;
+        border-color: #fff;
+      }
+    }
+  }
+
+}

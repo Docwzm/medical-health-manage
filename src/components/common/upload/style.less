@@ -1,0 +1,55 @@
+.head_upload {
+  width: 260px;
+  text-align: center;
+  .label {
+    display: inline-block;
+    margin-top: 10px;
+    line-height: 24px;
+    color: #999;
+    font-size: 12px;
+    text-align: left;
+  }
+  .img {
+    display: block;
+    margin: 20px auto;
+    position: relative;
+    & > div {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(255, 255, 255, .5);
+      .progress {
+        position: absolute;
+        left: 80px;
+        top: 0;
+      }
+    }
+    img {
+      width: 100px;
+      height: 100px;
+    }
+  }
+
+  label {
+    border: 1px solid #20a0ff;
+    background-color: #20a0ff;
+    border-radius: 4px;
+    width: 68px;
+    height: 28px;
+    line-height: 28px;
+    font-size: 14px;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    input {
+      display: none;
+    }
+  }
+}
+
+.file_upload {
+  .dialog-footer {
+    text-align: center;
+  }
+}

@@ -1,0 +1,30 @@
+.buttonsBox {
+  .tabs {
+    > .el-button {
+      width: 80px;
+      height: 36px;
+      border-radius: 4px !important;
+      margin-bottom: 30px;
+      &:not(:last-child) {
+        margin-right: 20px;
+      }
+      &.active {
+        border-color: #20A0FF;
+        background-color: #fff;
+        color: #20A0FF;
+        position: relative;
+        &:before {
+          content: '';
+          width: 20px;
+          height: 18px;
+          display: inline-block;
+          vertical-align: middle;
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          background: url('../../../../static/list/icon-add-blood-sugar-select.svg');
+        }
+      }
+    }
+  }
+}

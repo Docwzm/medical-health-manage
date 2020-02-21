@@ -1,0 +1,204 @@
+.index
+  .top-box
+    padding-left calc( 100vw - 100% )
+    position fixed
+    top 0
+    left 0
+    right 0
+    height 59px
+    line-height 59px
+    background -webkit-linear-gradient(#FFF, #F9F9F9)
+    background -o-linear-gradient(#FFF, #F9F9F9)
+    background -moz-linear-gradient(#FFF, #F9F9F9)
+    background linear-gradient(#FFF, #F9F9F9)
+    border-bottom 1px solid #E7E7E7
+    z-index 2
+    .title
+      float left
+      margin-left 20px
+      padding-left 68px
+      font-size 18px
+      background url('../../../../static/header/icon-logo.svg') no-repeat 0 center / auto 30px
+      font-weight normal
+      color #000
+      cursor pointer
+    .title2
+      background none
+      position relative
+      img
+        position absolute
+        left 0
+        top 8px
+        width 45px
+        height 45px
+    .time
+      float left
+      margin-left 10px
+      font-size 14px
+      span
+        padding-right 10px
+        color #CECFD1
+    .infos,.reset
+        float right
+    .infos
+      position relative
+      .top
+        padding-left 40px
+        font-size 16px
+        cursor pointer
+        position relative
+        font-weight normal
+        .icon
+          position absolute
+          left 0
+          top 15px
+          border-radius 50%
+          width 30px
+          height 30px
+          background url('../../../../static/header/icon-head.svg') no-repeat 0 center / 30px 30px
+        .name
+          margin-left 10px
+          padding-right 25px
+          background url('../../../../static/header/icon-menu-up.svg') no-repeat right center / 12px 6px
+      .down
+        position absolute
+        right 0
+        top 50px
+        width 120px
+        line-height 36px
+        text-align center
+        .con
+          padding 6px 0
+          border 1px solid #C0CCDA
+          border-radius 2px
+          box-shadow 0 2px 4px rgba(0,0,0,.12),0 0 6px rgba(0,0,0,.04)
+          background #FFF
+          position relative
+          top 10px
+          transform scale(0)
+          transform-origin top
+          transition transform .2s linear
+        a
+          display block
+          color #000
+          font-size 14px
+          &:hover
+            background #E4E9F3
+    .reset
+      width 20px
+      height 20px
+      background url('../../../../static/header/icon-setting.svg') no-repeat 0 0 / 100%
+      margin 20px 20px 0 20px
+      cursor pointer
+  .top-box-show
+    z-index 2
+    .infos
+      .down_show
+        .con
+          transform scale(1)
+      .top
+        .name
+          background-image url('../../../../static/header/icon-menu-down.svg')
+  .pull-right
+    float right
+.admin-layout
+  .top-content
+    width 1190px
+    margin 0 auto
+  .message,.tool
+    float right
+    width 58px
+    border-width 3px 1px 0
+    border-style solid
+    border-color transparent
+    cursor pointer
+    position relative
+    .hide-select
+      position absolute
+      right 0
+      top 59px
+      padding-top 5px
+      transform scale(0)
+      transform-origin top
+      transition transform .2s linear
+      .list
+        border 1px solid #D9E0E8
+        background #FFF
+        box-shadow 0 2px 4px rgba(0,0,0,.12),0 0 6px rgba(0,0,0,.04)
+        padding 5px 0
+        .item
+          &:hover
+            background #F4F4F2
+            color #4AAEFE
+          .icon
+            position absolute
+            left 14px
+            top -10px
+    &:hover
+      border-color #40AAFF #F4F4F2 transparent
+    .hide-select-show
+      transform scale(1)
+  .message
+    .top
+      height 59px
+      background url("../../../../static/admin/icon_top_message.svg") no-repeat center 20px
+      .top_empty
+        width 38px
+        height 26px
+    .hide-select
+      //width 220px
+      width 145px
+      .list
+        .item
+          height 36px
+          padding-left 45px
+          overflow hidden
+          background-repeat no-repeat
+          background-position 12px center
+          position relative
+          .name
+            float left
+            line-height 36px
+            font-size 14px
+          .nums
+            float left
+            margin-left 12px
+            line-height 15px
+            color #FFF
+            margin-top 11px
+            padding 0 5px
+            border-radius 8px
+            background #FF5B50
+            font-size 12px
+          .time
+            float right
+            margin-right 10px
+            color #B8B5B0
+            line-height 36px
+  .tool
+
+    .top
+      height 59px
+      background url("../../../../static/admin/icon_top_defaultavatar.svg") no-repeat center
+      position relative
+    .top2
+      background-image url("../../../../static/admin/icon_top_doctor_defaultavatar.svg")
+      img
+        position absolute
+        left 15px
+        top 15px
+        width 30px
+        height 30px
+        border-radius 50%
+    .top3
+      background none
+    .hide-select
+      .list
+        width 124px
+        .item
+          line-height 36px
+          position relative
+          padding-left 45px
+          font-size 14px
+          .icon
+            top 2px

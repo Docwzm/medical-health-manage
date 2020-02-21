@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44 (41411) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-health-data-list-blood-pressure</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="医生账户" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M0,20 C0,8.954305 8.95187636,0 20,0 C31.045695,0 40,8.95187636 40,20 C40,31.045695 31.0481236,40 20,40 C8.954305,40 0,31.0481236 0,20 Z M20,32 C24.9705627,32 29,27.9581045 29,22.9721738 C29,17.986243 20,7.99812743 20,7.99812743 C20,7.99812743 11,17.986243 11,22.9721738 C11,27.9581045 15.0294373,32 20,32 Z M20,30 C16.1340068,30 13,26.8659932 13,23 C13,23 15.0184969,22.0061063 17.0066539,22.0061063 C18.994811,22.0061063 20.9753603,24.0154008 22.9875709,24.0154008 C24.9997815,24.0154008 27,23 27,23 C27,26.8659932 23.8659932,30 20,30 Z" id="icon-health-data-list-blood-pressure" fill="#4BC649"></path>
+    </g>
+</svg>

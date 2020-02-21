@@ -1,0 +1,94 @@
+.my_dialog {
+  border: 1px solid #ccc;
+  box-sizing: content-box;
+  .el-dialog__headerbtn{
+    margin-top:16px;
+  }
+  .el-dialog {
+    width: 670px;
+  }
+  &.win622 > .el-dialog{
+    width: 622px;
+    .el-dialog__header  {
+      border-bottom: 1px solid #e0e6ed;
+      padding: 0;
+      height: 46px;
+      line-height: 46px;
+      box-sizing: border-box;
+      .el-dialog__title {
+        font-weight: 400;
+        line-height: 1;
+        font-size: 16px;
+      }
+    }
+  }
+  &.win520 > .el-dialog{
+    width: 520px;
+  }
+  &.win600 > .el-dialog{
+    width: 600px;
+  }
+  &.win750 > .el-dialog{
+    width: 750px;
+  }
+  &.win980 > .el-dialog{
+    width: 980px;
+  }
+  &.win1000 > .el-dialog{
+    width: 1000px;
+  }
+
+
+  &.maxH600 > .el-dialog > .el-dialog__body{
+    //max-height: 600px;
+    max-height: 500px;
+    overflow-y: auto;
+    box-sizing: border-box;
+  }
+  &.maxH620 > .el-dialog > .el-dialog__body{
+    //max-height: 600px;
+    max-height: 520px;
+    overflow-y: auto;
+    box-sizing: border-box;
+  }
+  &.maxHeight600 > .el-dialog > .el-dialog__body{
+    //max-height: 600px;
+    max-height: 600px;
+    overflow-y: auto;
+    box-sizing: border-box;
+  }
+
+  .el-dialog__header {
+    border-bottom: 1px solid #C0CCDA;
+    padding: 0;
+    height: 50px;
+    line-height: 50px;
+    margin: 0 20px 0 20px;
+    position: relative;
+    z-index:2;
+    background:#FFF;
+    .el-dialog__title {
+      font-weight: 400;
+    }
+    > .titles {
+      width: 96%;
+      display: inline-block;
+      &:after {
+        clear:both;content:'.';display:block;width: 0;height: 0;visibility:hidden;
+      }
+    }
+  }
+  .el-dialog__body {
+    padding: 20px;
+  }
+  .allBar {
+    margin-bottom: 6px;
+    float: right;
+  }
+}
+
+.admin-detail-dialog {
+  .tiTitle{
+    display:none;
+  }
+}
