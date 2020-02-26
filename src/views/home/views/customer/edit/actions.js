@@ -20,7 +20,7 @@ import {
 } from '../../../../../api/patient'
 import {getPatientDeviceApi} from '../../../../../api/device'
 import {CREATE} from '../../../../../constant'
-import {def, dvi} from './mutations'
+import {def} from './mutations'
 
 export const getCityList = async function ({commit, state}, province) {
   const {pros} = commonGet(state)
@@ -42,7 +42,7 @@ const getCitys = function ({commit, state}, key, eve) {
 
 const init = async function ({commit, state}) {
   commit(CUSTOMER_EDIT, {...def})
-  commit(DEVICE_INFO, dvi)
+  commit(DEVICE_INFO, undefined)
   const {id} = paramsGetter(state)
   await getCity({commit, state}, 'pros')
   if (id === 'create') {

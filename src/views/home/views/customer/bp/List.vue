@@ -294,7 +294,7 @@
         remarkingItem: null,
         remarkContent: '',
 
-        //bpDescIcon: require('!!!raw!!./assets/icon-explain-blood-pressure.svg')
+        //bpDescIcon: require('!raw-loader!!./assets/icon-explain-blood-pressure.svg')
       }
     },
     computed: {

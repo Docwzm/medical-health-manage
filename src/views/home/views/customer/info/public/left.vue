@@ -46,7 +46,7 @@
     <div class="devices">
       <div class="infoTitle">设备</div>
       <div class="li" v-if="device.length">
-        <ms-popover v-for="(d, i) in device" :device="d" :value="i"></ms-popover>
+        <ms-popover v-for="(d, i) in device" :key="i" :device="d" :value="i"></ms-popover>
       </div>
       <div v-if="!device.length" class="dviIno">暂无设备</div>
     </div>
@@ -445,7 +445,7 @@
           sleep: false,
         },
         img: {
-          remarks: require('!!raw!../../../../../../../static/icon-remarks.svg'),
+          remarks: require('!raw-loader!!../../../../../../../static/icon-remarks.svg'),
         },
         detailDialog: false,
       }

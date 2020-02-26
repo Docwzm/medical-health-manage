@@ -52,7 +52,8 @@
                 <el-form-item prop="hospitalId">
                   <el-select class="form_select" v-model="ruleForm.hospitalId" placeholder="请选择">
                     <el-option
-                            v-for="item in hospitalList"
+                            v-for="(item,index) in hospitalList"
+                            :key="index"
                             :label="item.name"
                             :value="item.id">
                     </el-option>
@@ -66,7 +67,8 @@
                 <el-form-item prop="departmentId" >
                   <el-select class="form_select" v-model="ruleForm.departmentId" placeholder="请选择科室">
                     <el-option
-                            v-for="item in departmentList"
+                            v-for="(item,index) in departmentList"
+                            :key="index"
                             :label="item.name"
                             :value="item.id">
                     </el-option>
@@ -80,7 +82,8 @@
                 <el-form-item prop="titleId" >
                   <el-select class="form_select" v-model="ruleForm.titleId" placeholder="请选择职称">
                     <el-option
-                            v-for="item in titleList"
+                            v-for="(item,index) in titleList"
+                            :key="index"
                             :label="item.name"
                             :value="item.id">
                     </el-option>

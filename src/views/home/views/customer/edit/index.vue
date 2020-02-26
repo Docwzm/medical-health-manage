@@ -217,7 +217,7 @@
           </my-item>
           <div v-if="device&&device.length" class="title">设备信息</div>
           <div class="devices" v-if="device">
-            <ms-popover v-for="(d, i) in device" :device="d" :value="i" :column="5"></ms-popover>
+            <ms-popover v-for="(d, i) in device" :key="i" :device="d" :value="i" :column="5"></ms-popover>
           </div>
         </div>
       </div>

@@ -108,8 +108,8 @@
         <!--isNotesEdit: false,-->
         <!--activeName: 'patient_doctor_info',-->
         <!--img: {-->
-          <!--save: require('!!raw!../../../static/icon-save.svg'),-->
-          <!--remarks: require('!!raw!../../../static/icon-remarks.svg'),-->
+          <!--save: require('../../../static/icon-save.svg'),-->
+          <!--remarks: require('../../../static/icon-remarks.svg'),-->
         <!--},-->
       <!--}-->
     <!--},-->

@@ -12,7 +12,7 @@
           <div class="form_item">
             <span class="label">发送对象：</span>
             <div class="detail send_users">
-              <div class="item" v-for="(item,index) in sendMessageUsers">
+              <div class="item" v-for="(item,index) in sendMessageUsers" :key="index">
                 {{item.receiverName}}
                 <span class="close" @click="deleteUser(item,index)"></span>
               </div>

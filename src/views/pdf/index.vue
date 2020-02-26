@@ -205,8 +205,8 @@
         pageSize: 60,
         dataNum: 5,
         svg: {
-          female: require('!!raw!../../../static/pdf/img_female.svg'),
-          male: require('!!raw!../../../static/pdf/img_male.svg'),
+          female: require('!raw-loader!!../../../static/pdf/img_female.svg'),
+          male: require('!raw-loader!!../../../static/pdf/img_male.svg'),
         }
       }
     },

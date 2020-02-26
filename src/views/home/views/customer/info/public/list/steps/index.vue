@@ -85,7 +85,7 @@
             totalRecord: 0
           },
           img: {
-            holder: require('!!raw!../../../../../../../../../static/assets/icon-search.svg'),
+            holder: require('../../../../../../../../../static/assets/icon-search.svg'),
           },
         }
     },

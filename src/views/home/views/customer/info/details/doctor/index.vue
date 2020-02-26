@@ -119,13 +119,13 @@
         ],
         counts: {},
         img: {
-          bp: require('!!raw!../../../../../../../../static/chart/icon-health-data-list-blood-pressure.svg'),
-          bs: require('!!raw!../../../../../../../../static/chart/icon-health-data-list-blood-sugar.svg'),
-          steps: require('!!raw!../../../../../../../../static/chart/icon-health-data-list-steps.svg'),
-          weight: require('!!raw!../../../../../../../../static/chart/icon-health-data-list-weight.svg'),
-          heartRate: require('!!raw!../../../../../../../../static/chart/icon-health-data-list-heart-rate.svg'),
-          temperature: require('!!raw!../../../../../../../../static/chart/icon-health-data-list-temperature.svg'),
-          sleep: require('!!raw!../../../../../../../../static/chart/icon-health-data-list--sleep.svg'),
+          bp: require('!raw-loader!!../../../../../../../../static/chart/icon-health-data-list-blood-pressure.svg'),
+          bs: require('!raw-loader!!../../../../../../../../static/chart/icon-health-data-list-blood-sugar.svg'),
+          steps: require('!raw-loader!!../../../../../../../../static/chart/icon-health-data-list-steps.svg'),
+          weight: require('!raw-loader!!../../../../../../../../static/chart/icon-health-data-list-weight.svg'),
+          heartRate: require('!raw-loader!!../../../../../../../../static/chart/icon-health-data-list-heart-rate.svg'),
+          temperature: require('!raw-loader!!../../../../../../../../static/chart/icon-health-data-list-temperature.svg'),
+          sleep: require('!raw-loader!!../../../../../../../../static/chart/icon-health-data-list--sleep.svg'),
         }
       }
     },

@@ -51,7 +51,7 @@
     <customerLeft>
       <div class="nav-hd">
         <my-tabs @tab-click="navTopics" :activeName="'bp'" class="nav-tabs">
-          <my-tab-pane v-for="tab in navTabs" :label="tab.name" :name="tab.id">
+          <my-tab-pane v-for="(tab,index) in navTabs" :key="index" :label="tab.name" :name="tab.id">
           </my-tab-pane>
         </my-tabs>
         <my-button
@@ -61,7 +61,7 @@
 
       <div class="bp-hd">
         <el-tabs @tab-click="switchTab" :active-name="tabId" class="bp-tabs">
-          <el-tab-pane v-for="tab in bpTabs" :label="tab.name" :name="tab.id"></el-tab-pane>
+          <el-tab-pane v-for="(tab,index) in bpTabs" :key="index" :label="tab.name" :name="tab.id"></el-tab-pane>
 
         </el-tabs>
 

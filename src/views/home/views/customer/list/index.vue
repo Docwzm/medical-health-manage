@@ -34,19 +34,22 @@
             v-model="ageEnd">
     </el-input><el-select class="search_select search_select2" v-model="sex" placeholder="性别" clearable style="width:120px;">
       <el-option
-              v-for="item in sexList"
+              v-for="(item,index) in sexList"
+              :key="index"
               :label="item.label"
               :value="item.value">
       </el-option>
     </el-select><el-select class="search_select" v-model="sickType" placeholder="疾病" clearable style="width:180px;">
       <el-option
-              v-for="item in sickTypeList"
+              v-for="(item,index) in sickTypeList"
+              :key="index"
               :label="item.label"
               :value="item.value">
       </el-option>
     </el-select><el-select class="search_select" v-model="bp" placeholder="血压等级" clearable style="width:196px;">
       <el-option
-              v-for="item in bpList"
+              v-for="(item,index) in bpList"
+              :key="index"
               :label="item.label"
               :value="item.value">
       </el-option>
@@ -226,7 +229,7 @@
           <div class="el-loading-mask common-loading" v-show="loading2"><div class="el-loading-spinner"><svg viewBox="25 25 50 50" class="circular"><circle cx="50" cy="50" r="20" fill="none" class="path"></circle></svg><!----></div></div>
           <div v-show="hasGroup">
             <el-checkbox-group v-model="groupIds" @change="handleCheckedGroupChange">
-              <el-checkbox v-for="item in groupList" :label="item.id">{{item.name}}</el-checkbox>
+              <el-checkbox v-for="(item,index) in groupList" :key="index" :label="item.id">{{item.name}}</el-checkbox>
             </el-checkbox-group>
 
             <p class="tips">添加后，您可以在用户分组中查看该用户的所属分组。</p>

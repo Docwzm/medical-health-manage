@@ -3,7 +3,7 @@ const shortcutMenus = [
     text: '用户管理',
     link: {path: '/home/customer/list'},
     route: {path: '/home/customer/list'},
-    icon: require('!!raw!../../../static/header/icon-patient-normal.svg'),
+    icon: require('!raw-loader!!../../../static/header/icon-patient-normal.svg'),
     subMenus: [
       {
         text: '用户列表',
@@ -19,7 +19,7 @@ const shortcutMenus = [
   },
   {
     text: '数据分析',
-    icon: require('!!raw!../../../static/admin/icon_sidetbarleft_dataanalysis.svg'),
+    icon: require('!raw-loader!!../../../static/admin/icon_sidetbarleft_dataanalysis.svg'),
     subMenus: [
       {
         text: '用户属性',
@@ -38,7 +38,7 @@ const shortcutMenus = [
 const shortcutMenus2 = [
   {
     text: '医护管理',
-    icon: require('!!raw!../../../static/admin/icon_sidetbarleft_doctorlist.svg'),
+    icon: require('!raw-loader!!../../../static/admin/icon_sidetbarleft_doctorlist.svg'),
     subMenus: [
       {
         text: '医生列表',
@@ -49,7 +49,7 @@ const shortcutMenus2 = [
   },
   {
     text: '用户管理',
-    icon: require('!!raw!../../../static/admin/icon_sidetbarleft_patientlist.svg'),
+    icon: require('!raw-loader!!../../../static/admin/icon_sidetbarleft_patientlist.svg'),
     subMenus: [
       {
         text: '用户列表',
@@ -60,7 +60,7 @@ const shortcutMenus2 = [
   },
   {
     text: '数据分析',
-    icon: require('!!raw!../../../static/admin/icon_sidetbarleft_dataanalysis.svg'),
+    icon: require('!raw-loader!!../../../static/admin/icon_sidetbarleft_dataanalysis.svg'),
     subMenus: [
       {
         text: '用户属性',
@@ -76,7 +76,7 @@ const shortcutMenus2 = [
   },
   {
     text: '营销管理',
-    icon: require('!!raw!../../../static/admin/icon_sidetbarleft_management.svg'),
+    icon: require('!raw-loader!!../../../static/admin/icon_sidetbarleft_management.svg'),
     subMenus: [
       {
         text: '品牌定制',

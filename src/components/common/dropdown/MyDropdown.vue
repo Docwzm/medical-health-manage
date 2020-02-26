@@ -8,7 +8,7 @@
       {{labels}}<i class="el-icon-caret-bottom el-icon--right"></i>
     </my-button>
     <MyDropdownMenu>
-      <MyDropdownItem v-for="(item, index) in menu" @click.native="check(item)">{{item.name}}</MyDropdownItem>
+      <MyDropdownItem v-for="(item, index) in menu" :key="index" @click.native="check(item)">{{item.name}}</MyDropdownItem>
     </MyDropdownMenu>
   </MyDropdown>
 </template>

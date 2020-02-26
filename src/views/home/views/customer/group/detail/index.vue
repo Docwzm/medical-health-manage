@@ -131,20 +131,23 @@
                     v-model="maxAge">
             </el-input><el-select class="search-select" v-model="sex_val" placeholder="性别" clearable>
               <el-option
-                      v-for="item in sex"
+                      v-for="(item,index) in sex"
+                      :key="index"
                       :label="item.label"
                       :value="item.value">
               </el-option>
             </el-select><el-select class="search-select search-select2" v-model="group_val" placeholder="请选择组" clearable>
-              <el-option v-for="item in allGroup" :label="item.label" :value="item.value"></el-option>
+              <el-option v-for="(item,index) in allGroup" :key="index" :label="item.label" :value="item.value"></el-option>
               <el-option
-                      v-for="item in group.list"
+                      v-for="(item,index) in group.list"
+                      :key="index"
                       :label="item.name"
                       :value="item.id">
               </el-option>
             </el-select><el-select class="search-select search-select3" v-model="source_val" placeholder="来源渠道" clearable>
               <el-option
-                      v-for="item in source"
+                      v-for="(item,index) in source"
+                      :key="index"
                       :label="item.label"
                       :value="item.value">
               </el-option>

@@ -26,7 +26,7 @@
               <span>一</span><span>二</span><span>三</span><span>四</span><span>五</span><span>六</span><span>日</span>
             </div>
             <div class="dateDate">
-              <span v-for="(day, index) in dayList" :class="{ 'in': day.count > 0 ,'active':index === idx}"
+              <span v-for="(day, index) in dayList" :key="index" :class="{ 'in': day.count > 0 ,'active':index === idx}"
                     @click="getDayMsg(day.date, day.count, index)">{{day.text}}</span>
             </div>
           </div>
@@ -35,7 +35,7 @@
           <div class="chatBoxBody" ref="chatBoxBody">
             <div v-if="msgLoad" class="loading"><span>加载中...</span></div>
             <div v-if="noData" class="noData">暂无聊天记录</div>
-            <div class="msgBarBox" v-for="(msg,idx) in record" :class="[msg.From_Account == doctor.id?'right':'left']">
+            <div class="msgBarBox" v-for="(msg,idx) in record" :key="idx" :class="[msg.From_Account == doctor.id?'right':'left']">
               <div class="cbDate" v-if="!!getDate(idx,msg)"><span>{{getDate(idx,msg)}}</span></div>
               <img class="headImg" v-if="msg.From_Account != doctor.id" :src="getPatientImg()">
               <span v-html="img.error" v-if="msg.error" @click="send(msg)">!</span>

@@ -15,7 +15,7 @@
           <div class="tabsBox">
             <div class="back" @click="go">返回列表</div>
             <el-button-group class="tabs">
-              <el-button @click="setQuery(tab.name,'chartType')" v-for="tab in chartTabs"
+              <el-button @click="setQuery(tab.name,'chartType')" v-for="(tab,index) in chartTabs" :key="index"
                          :class="{'active': tab.name === chartType}">
                 {{tab.label}}
               </el-button>

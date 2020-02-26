@@ -48,7 +48,7 @@
           <div class="devices">
             <div class="infoTitle">设备</div>
             <div class="li" v-if="device.length">
-              <ms-popover v-for="(d, i) in device" :device="d" :value="i"></ms-popover>
+              <ms-popover v-for="(d, i) in device" :key="i" :device="d" :value="i"></ms-popover>
             </div>
             <div v-if="!device.length" class="dviIno">暂无设备</div>
           </div>
@@ -133,7 +133,7 @@
                            :menu="[{key: 'trend', name: '血压趋势变化图'}, {key: 'errCount', name: '血压异常分布图'}]"
                            :value="0" async="graphType"></my-dropdown>
               <el-button-group class="otherRight">
-                <el-button @click="setQuery(tab,'timeRange')" v-for="tab in dateRangeTabs"
+                <el-button @click="setQuery(tab,'timeRange')" v-for="(tab,index) in dateRangeTabs" :key="index"
                            :class="{'active': tab.name === timeRange}">
                   {{tab.label}}
                 </el-button>
@@ -432,12 +432,12 @@
           {label: '年', name: 'year'}
         ],
         img: {
-          szy: require('!!raw!../../../../../../../../../static/diastolicPressure.svg'),
-          ssy: require('!!raw!../../../../../../../../../static/icon_user_data_bloodpressure_systolic.svg'),
-          des: require('!!raw!../../../../../../../../../static/icon-introduction.svg'),
-          save: require('!!raw!../../../../../../../../../static/icon-save.svg'),
-          remarks: require('!!raw!../../../../../../../../../static/icon-remarks.svg'),
-          holder: require('!!raw!../../../../../../../../../static/assets/icon-search.svg'),
+          szy: require('!raw-loader!!../../../../../../../../../static/diastolicPressure.svg'),
+          ssy: require('!raw-loader!!../../../../../../../../../static/icon_user_data_bloodpressure_systolic.svg'),
+          des: require('!raw-loader!!../../../../../../../../../static/icon-introduction.svg'),
+          save: require('!raw-loader!!../../../../../../../../../static/icon-save.svg'),
+          remarks: require('!raw-loader!!../../../../../../../../../static/icon-remarks.svg'),
+          holder: require('!raw-loader!!../../../../../../../../../static/assets/icon-search.svg'),
         },
       }
     },

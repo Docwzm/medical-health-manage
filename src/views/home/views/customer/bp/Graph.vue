@@ -162,7 +162,8 @@
     <div class="graph-toggles">
       <el-button-group>
         <el-button
-          v-for="tab in dateRangeTabs"
+          v-for="(tab,index) in dateRangeTabs"
+          :key="index"
           @click="setQuery(tab,'timeRange')"
           :m-class="tab.name==timeRange?'active':''"
         >{{tab.label}}
@@ -171,7 +172,8 @@
       <el-button-group style="float:right;margin-left:-1000px">
         <el-button
           @click="setQuery(tab,'graphType')"
-          v-for="tab in graphTypeTabs"
+          v-for="(tab,index) in graphTypeTabs"
+          :key="index"
           :m-class="tab.name==graphType?'active':''"
         >{{tab.label}}
         </el-button>
@@ -192,8 +194,8 @@
   export default{
     data () {
       return {
-        sysIcon: require('!!!raw!!./assets/icon-Explain-sys.svg'),
-        diaIcon: require('!!!raw!!./assets/icon-Explain-dia.svg'),
+        sysIcon: require('!raw-loader!!./assets/icon-Explain-sys.svg'),
+        diaIcon: require('!raw-loader!!./assets/icon-Explain-dia.svg'),
         timeoutId:-1,
         marklineX: 0,
         markDia: 0,

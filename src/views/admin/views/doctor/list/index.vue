@@ -28,21 +28,24 @@
         </el-input><el-select class="search-select" v-model="titleId" placeholder="请选择职称" clearable>
           <el-option label="全部" value="0"></el-option>
           <el-option
-                  v-for="item in titleList"
+                  v-for="(item,index) in titleList"
+                  :key="index"
                   :label="item.name"
                   :value="item.id">
           </el-option>
         </el-select><el-select class="search-select" v-model="departmentId" placeholder="请选择科室" clearable>
           <el-option label="全部" value="0"></el-option>
           <el-option
-                  v-for="item in departmentList"
+                  v-for="(item,index) in departmentList"
+                  :key="index"
                   :label="item.name"
                   :value="item.id">
           </el-option>
         </el-select><el-select class="search-select search-select2" v-model="organId" placeholder="请选择所属机构" clearable>
           <el-option label="全部" value="0"></el-option>
           <el-option
-                  v-for="item in organList"
+                  v-for="(item,index) in organList"
+                  :key="index"
                   :label="item.name"
                   :value="item.id">
           </el-option>

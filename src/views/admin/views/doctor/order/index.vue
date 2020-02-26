@@ -50,7 +50,8 @@
                 placeholder="请选择服务期限">
         </el-date-picker><el-select class="search-select" v-model="orderStatus" placeholder="请选择订单状态" clearable>
           <el-option
-                  v-for="item in orderTypeList"
+                  v-for="(item,index) in orderTypeList"
+                  :key="index"
                   :label="item.label"
                   :value="item.value">
           </el-option>

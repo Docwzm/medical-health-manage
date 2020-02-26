@@ -9,7 +9,7 @@
     <my-dropdown v-show="chartType === 'bs'" class="bpOption" :label="bsTypeText" butype="text" :menu="bsTabs" :change="true" async="bsType"></my-dropdown>
 
     <el-button-group class="otherRight">
-      <el-button @click="setQuery(tab,'timeRange')" v-for="tab in dateRangeTabs"
+      <el-button @click="setQuery(tab,'timeRange')" v-for="(tab,index) in dateRangeTabs" :key="index"
                  :class="{'active': tab.name === timeRange}">
         {{tab.label}}
       </el-button>

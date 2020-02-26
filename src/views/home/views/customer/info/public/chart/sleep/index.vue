@@ -15,7 +15,7 @@
       <div class="title">{{title}}</div>
       <!--右侧按钮-->
       <el-button-group class="otherRight">
-        <el-button @click="setChartQuery(tab,'timeRange')" v-for="tab in dateRangeTabs" :class="{'active': tab.name === timeRange}">
+        <el-button @click="setChartQuery(tab,'timeRange')" v-for="(tab,index) in dateRangeTabs" :key="index" :class="{'active': tab.name === timeRange}">
           {{tab.label}}
         </el-button>
       </el-button-group>

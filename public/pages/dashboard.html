@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>健康管理平台</title>
+  <!--IE低版本兼容-->
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <script src="<%= htmlWebpackPlugin.options.publicPath %>static/lib/ie/core.min.js"></script>
+</head>
+
+<body>
+  <div id="dashboard-app"></div>
+  <!-- built files will be auto injected -->
+  <script>
+    var _hmt = _hmt || [];
+    (function () {
+      var hm = document.createElement("script"),
+        hostName = location.hostname,
+        id = '9260867862ea6f100d8f9ef1ab862a19'
+      if (hostName == 'static-dev.lifesense.com') {
+        id = '871763e2dca443245bd69991f4948db6'
+      } else if (hostName == 'static-qa2.lifesense.com') {
+        id = '6fa049611b89c82eec749f1e5bc34ab6'
+      } else {
+        id = '9260867862ea6f100d8f9ef1ab862a19'
+      }
+      hm.src = "https://hm.baidu.com/hm.js?" + id;
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+
+
+    (function () {
+      function getRem(pwidth, prem) {
+        var html = document.getElementsByTagName("html")[0];
+        var oWidth = document.body.clientWidth || document.documentElement.clientWidth;
+        oWidth = oWidth < 1120 ? 1120 : oWidth
+        html.style.fontSize = oWidth / pwidth * prem + "px";
+      }
+
+      getRem(1920, 100)
+
+      window.addEventListener('resize', function () {
+        getRem(1920, 100)
+      }, false);
+
+    })()
+
+  </script>
+</body>
+
+</html>

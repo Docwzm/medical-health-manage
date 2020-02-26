@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>健康管理平台</title>
+  <link rel="stylesheet" href="<%= htmlWebpackPlugin.options.publicPath %>static/lib/wangEditor/css/wangEditor.min.css">
+  <!--IE低版本兼容-->
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <script src="<%= htmlWebpackPlugin.options.publicPath %>static/lib/ie/core.min.js"></script>
+  <script type="text/javascript" src="<%= htmlWebpackPlugin.options.publicPath %>static/lib/IMSDK_V1.7/sdk/amrnb.js"></script>
+  <script type="text/javascript" src="<%= htmlWebpackPlugin.options.publicPath %>static/lib/IMSDK_V1.7/sdk/spark-md5.js"></script>
+  <!--web im sdk-->
+  <script type="text/javascript" src="<%= htmlWebpackPlugin.options.publicPath %>static/lib/IMSDK_V1.7/sdk/webim.min.js"></script>
+  <script type="text/javascript" src="<%= htmlWebpackPlugin.options.publicPath %>static/lib/IMSDK_V1.7/sdk/playAudio.js"></script>
+
+  <script src="https://staticfile.qnssl.com/Plupload/2.1.1/moxie.min.js"></script>
+  <script src="https://staticfile.qnssl.com/Plupload/2.1.1/plupload.min.js"></script>
+  <script src="https://staticfile.qnssl.com/qiniu-js-sdk/1.0.14-beta/qiniu.min.js"></script>
+  <script src="<%= htmlWebpackPlugin.options.publicPath %>static/lib/wangEditor/js/jquery-3.2.0.min.js"></script>
+  <script src="<%= htmlWebpackPlugin.options.publicPath %>static/lib/wangEditor/js/wangEditor.min.js"></script>
+  <script src="<%= htmlWebpackPlugin.options.publicPath %>static/lib/html2canvas.min.js"></script>
+</head>
+<body>
+<div id="app"></div>
+<!-- built files will be auto injected -->
+<script>
+  var _hmt = _hmt || [];
+  (function() {
+    var hm = document.createElement("script"),
+        hostName = location.hostname,
+        id = '9260867862ea6f100d8f9ef1ab862a19'
+    if(hostName == 'static-dev.lifesense.com') {
+      id = '871763e2dca443245bd69991f4948db6'
+    }else if(hostName == 'static-qa2.lifesense.com') {
+      id = '6fa049611b89c82eec749f1e5bc34ab6'
+    } else {
+      id = '9260867862ea6f100d8f9ef1ab862a19'
+    }
+    hm.src = "https://hm.baidu.com/hm.js?" + id;
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+  })();
+</script>
+</body>
+</html>

@@ -7,9 +7,11 @@ const sourceMapEnabled = isProduction
   : config.dev.cssSourceMap;
 
 module.exports = {
-  loaders: utils.cssLoaders({
+  loaders: Object.assign({},utils.cssLoaders({
     sourceMap: sourceMapEnabled,
     extract: isProduction
+  }),{
+    js:'babel-loader'
   }),
   cssSourceMap: sourceMapEnabled,
   cacheBusting: config.dev.cacheBusting,

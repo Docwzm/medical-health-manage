@@ -142,7 +142,8 @@
                 placeholder="请选择日期">
         </el-date-picker><el-select class="search-select" v-model="source" placeholder="请选择数据来源" clearable>
         <el-option
-                v-for="item in sourceList"
+                v-for="(item,index) in sourceList"
+                :key="index"
                 :label="item.label"
                 :value="item.value">
         </el-option>

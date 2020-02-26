@@ -28,7 +28,7 @@
 <template>
   <div>
     <div class="test-title">
-      <my-button v-for="test in tests" class="btn btn-default select-btn" type="info"
+      <my-button v-for="(test,index) in tests" :key="index" class="btn btn-default select-btn" type="info"
                  @click.native="changeRouter(test)">{{test}}
       </my-button>
     </div>

@@ -8,7 +8,7 @@
     <MyDropdown class="my_dropdown" trigger="click" style="padding-right: 14px">
       <i class="el-icon-caret-bottom el-icon--right"></i>
       <MyDropdownMenu>
-        <MyDropdownItem :class="{'active': parseInt(value) === index+1}" v-for="(item, index) in menu" @click.native="check(item.key)">{{item.name}} {{parseInt(value) === index+1 ? '&nbsp;&nbsp;&nbsp;&radic;' : ''}}</MyDropdownItem>
+        <MyDropdownItem :class="{'active': parseInt(value) === index+1}" v-for="(item, index) in menu" :key="index" @click.native="check(item.key)">{{item.name}} {{parseInt(value) === index+1 ? '&nbsp;&nbsp;&nbsp;&radic;' : ''}}</MyDropdownItem>
       </MyDropdownMenu>
     </MyDropdown>
   </div>

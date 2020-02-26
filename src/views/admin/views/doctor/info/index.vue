@@ -74,7 +74,7 @@
 
       <div class="blank"></div>
       <ul class="list list2">
-        <li class="item" @click="viewDevice(item.id,index,$event)" v-for="(item, index) in deviceList"
+        <li class="item" @click="viewDevice(item.id,index,$event)" v-for="(item, index) in deviceList" :key="index"
         :ref="'li'+item.id">
         <img :src="item.picture" :alt="item.name"
         width="68" height="68">

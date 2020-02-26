@@ -45,7 +45,7 @@
               </div>
               <!--搜索结果列表-->
               <ul class="search-result" v-if="talkList && talkList.length > 0">
-                  <li class="search-item" v-for="item in talkList">
+                  <li class="search-item" v-for="(item,index) in talkList" :key="index">
                     <img class="search-item-portrait" :class="{'click-span':item.unreadCount < 1}" :src="item.patientHeadImgUrl || '../../../../../../static/doctor/icon-messagebox-head.svg'" @click="showGreneralCustomerInfoDetail(item)">
                     <div class="search-item-message" :class="{'click-span':item.unreadCount < 1}" @click="showGreneralCustomerInfoDetail(item)">
                         <div>
@@ -118,7 +118,7 @@
               </div>
               <!--搜索结果列表-->
               <ul class="search-result"  v-if="abnormalList && abnormalList.length > 0">
-                <li class="search-item search-item-pointer" v-for="item in abnormalList">
+                <li class="search-item search-item-pointer" v-for="(item,index) in abnormalList" :key="index">
                   <img class="search-item-portrait click-span" :src="item.headImgUrl || '../../../../../../static/doctor/icon-messagebox-head.svg'"  @click="showExceptionCustomerInfoDetail($event,item)">
                   <div class="search-item-message click-span" @click="showExceptionCustomerInfoDetail($event,item)">
                     <div>
@@ -193,7 +193,7 @@
               </div>
               <!--搜索结果列表-->
               <ul class="search-result" v-if="applyList && applyList.length > 0">
-                <li class="search-item" v-for="item in applyList">
+                <li class="search-item" v-for="(item,index) in applyList" :key="index">
                   <img class="search-item-portrait" :class="{'click-span':item.agree > 0}" @click="showApplyCustomerInfoDetail(item)" :src="item.headImgurl || '../../../../../../static/doctor/icon-messagebox-head.svg'">
                   <div class="search-item-message" :class="{'click-span':item.agree > 0}" @click="showApplyCustomerInfoDetail(item)">
                     <div>
@@ -248,7 +248,7 @@
                 <el-input v-model.trim="sendedMessage.searchWord" class="search-input" placeholder="请输入姓名" :maxlength="20"></el-input>
                 <el-date-picker v-model="sendedMessage.searchDate" class="date-input" type="daterange" placeholder="请选择时间范围"></el-date-picker>
                 <el-select v-model="sendedMessage.searchState" clearable class="search-select" placeholder="请选择发送状态">
-                  <el-option v-for="item in sendedMessage.stateItems" :label="item.name" :value="item.id"></el-option>
+                  <el-option v-for="(item,index) in sendedMessage.stateItems" :key="index" :label="item.name" :value="item.id"></el-option>
                 </el-select>
                 <!--<el-button type="primary" icon="search" @click="searchSendedMessage"></el-button>-->
                 <a href="javascript:;" class="search-btn" @click="searchSendedMessage"></a>
@@ -316,19 +316,19 @@
           <div class="item" v-if="sendedMessage.messageDetailInfos && sendedMessage.messageDetailInfos.sendingReceivers && sendedMessage.messageDetailInfos.sendingReceivers != ''">
             <span class="label">发送中：</span>
             <div class="detail">
-              <span><span v-for="item in sendedMessage.messageDetailInfos.sendingReceivers">{{item.receiverName}}，</span></span>
+              <span><span v-for="(item,index) in sendedMessage.messageDetailInfos.sendingReceivers" :key="index">{{item.receiverName}}，</span></span>
             </div>
           </div>
           <div class="item" v-if="sendedMessage.messageDetailInfos && sendedMessage.messageDetailInfos.succcessReceivers && sendedMessage.messageDetailInfos.succcessReceivers != ''">
             <span class="label">发送成功：</span>
             <div class="detail">
-              <span ><span v-for="item in sendedMessage.messageDetailInfos.succcessReceivers">{{item.receiverName}}，</span></span>
+              <span ><span v-for="(item,index) in sendedMessage.messageDetailInfos.succcessReceivers" :key="index">{{item.receiverName}}，</span></span>
             </div>
           </div>
           <div class="item" v-if="sendedMessage.messageDetailInfos && sendedMessage.messageDetailInfos.failReceivers && sendedMessage.messageDetailInfos.failReceivers != ''">
             <span class="label">发送失败：</span>
             <div class="detail">
-              <span ><span v-for="item in sendedMessage.messageDetailInfos.failReceivers">{{item.receiverName}}，</span></span>
+              <span ><span v-for="(item,index) in sendedMessage.messageDetailInfos.failReceivers" :key="index">{{item.receiverName}}，</span></span>
             </div>
           </div>
           <div class="item">

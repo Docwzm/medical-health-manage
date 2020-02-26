@@ -45,7 +45,8 @@
         class="source-select"
         v-model="source"
       >
-        <el-option v-for="opt in sourceOptions"
+        <el-option v-for="(opt,index) in sourceOptions"
+        :key="index"
        :label="opt.label"
        :value="opt.value"
 
@@ -77,7 +78,7 @@
     data () {
       // console.log(ElForm)
       return {
-        searchIcon: require('!!!raw!!./assets/icon-search.svg'),
+        searchIcon: require('!raw-loader!!./assets/icon-search.svg'),
         sourceOptions: [
           {value: '0', label: '设备采集'},
           {value: '1', label: '人工添加'},

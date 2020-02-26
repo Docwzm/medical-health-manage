@@ -8,7 +8,7 @@
   <div class="chart">
     <div class="title">{{title}}</div>
     <el-button-group class="otherRight">
-      <el-button @click="setQuery(tab,'timeRange')" v-for="tab in dateRangeTabs"
+      <el-button @click="setQuery(tab,'timeRange')" v-for="(tab,index) in dateRangeTabs" :key="index"
                  :class="{'active': tab.name === timeRange}">
         {{tab.label}}
       </el-button>

@@ -191,7 +191,7 @@
           totalRecord: 5
         },
         img: {
-          holder: require('!!raw!../../../../../../../../static/assets/icon-search.svg'),
+          holder: require('!raw-loader!!../../../../../../../../static/assets/icon-search.svg'),
         },
       }
     },

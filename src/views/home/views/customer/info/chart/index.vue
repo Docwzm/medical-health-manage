@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div v-for="tab in tabs">
+    <div v-for="(tab,index) in tabs" :key="index">
       <router-view v-if="tabsActiveName === tab.name"></router-view>
     </div>
   </div>

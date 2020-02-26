@@ -81,7 +81,7 @@
         <div class="blank"></div>
         <ul class="list list2" v-if="deviceList.length > 0">
           <li class="item" @click="viewDevice(item.id,index,$event)" v-for="(item, index) in deviceList"
-              :ref="'li'+item.id">
+              :key="index" :ref="'li'+item.id">
             <img :src="item.picture" :alt="item.name"
                  width="68" height="68">
             <p class="name" :title="item.name">{{item.name}}</p>

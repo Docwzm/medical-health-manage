@@ -14,7 +14,7 @@
 <script type="text/babel">
   // components
   import Top from './top/index.vue'
-  import Left from './left/index.js'
+  import Left from './left/index'
   import MainContent from './main/index'
   import actions from './views/chat/actions'
   import {getlocalStorage} from '../../api/common'

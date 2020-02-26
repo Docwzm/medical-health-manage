@@ -13,7 +13,7 @@ const CompressionWebpackPlugin = require('compression-webpack-plugin');
 
 let str = process.argv.splice(-1);
 const env = (str[0] === 'qa') ? require('../config/dev.env') : require('../config/prod.env');
-
+var publicPath = '/healthpc/'
 const webpackConfig = merge(baseWebpackConfig, {
   //生产模式默认配置: https://webpack.js.org/concepts/mode/#mode-production
   mode: 'production',
@@ -38,6 +38,7 @@ const webpackConfig = merge(baseWebpackConfig, {
       filename: utils.assetsPath('css/[name].[contenthash:7].css'),
       chunkFilename: utils.assetsPath('css/[name].[contenthash:12].css')
     }),
+
     new HtmlWebpackPlugin({
       filename: config.build.index,
       template: 'index.html',
@@ -48,6 +49,38 @@ const webpackConfig = merge(baseWebpackConfig, {
         removeAttributeQuotes: true,
         minifyJS: true
       }
+    }),
+    new HtmlWebpackPlugin({
+      filename: path.resolve(__dirname, '../dist/healthpc/index.html'),
+      template: 'public/pages/index.html',
+      inject: true,
+      publicPath:publicPath,
+      chunks:['index','vendor','manifest'],
+      minify: {
+        removeComments: true,
+        collapseWhitespace: true,
+        removeAttributeQuotes: true
+        // more options:
+        // https://github.com/kangax/html-minifier#options-quick-reference
+      },
+      // necessary to consistently work with multiple chunks via CommonsChunkPlugin
+      chunksSortMode: 'dependency'
+    }),
+    new HtmlWebpackPlugin({
+      filename: path.resolve(__dirname, '../dist/healthpc/dashboard.html'),
+      template: 'public/pages/dashboard.html',
+      inject: true,
+      publicPath:publicPath,
+      chunks:['dashboard','vendor','manifest'],
+      minify: {
+        removeComments: true,
+        collapseWhitespace: true,
+        removeAttributeQuotes: true
+        // more options:
+        // https://github.com/kangax/html-minifier#options-quick-reference
+      },
+      // necessary to consistently work with multiple chunks via CommonsChunkPlugin
+      chunksSortMode: 'dependency'
     }),
     new webpack.HashedModuleIdsPlugin(),
     new OptimizeCSSAssetsPlugin({
@@ -66,7 +99,35 @@ const webpackConfig = merge(baseWebpackConfig, {
       test: new RegExp('\\.(js|css)$'),
       threshold: 10240,
       minRatio: 0.8
-    })
+    }),
+    // split vendor js into its own file
+    new webpack.optimize.CommonsChunkPlugin({
+      name: 'vendor',
+      minChunks: function (module, count) {
+        // any required modules inside node_modules are extracted to vendor
+        return (
+          module.resource &&
+          /\.js$/.test(module.resource) &&
+          module.resource.indexOf(
+            path.join(__dirname, '../node_modules')
+          ) === 0
+        )
+      }
+    }),
+    // extract webpack runtime and module manifest to its own file in order to
+    // prevent vendor hash form being updated whenever app bundle is updated
+    new webpack.optimize.CommonsChunkPlugin({
+      name: 'manifest',
+      chunks: ['vendor']
+    }),
+    // copy custom static assets
+    new CopyWebpackPlugin([
+      {
+        from: path.resolve(__dirname, '../static'),
+        to: config.build.assetsSubDirectory,
+        ignore: ['.*']
+      }
+    ])
   ],
   optimization: {
     //Webpack4生产模式默认支持js的自动压缩

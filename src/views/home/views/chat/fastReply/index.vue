@@ -5,7 +5,7 @@
   <div class="fast-replay-con" tabindex="1" @blur="show=false">
     <div class="fast-replay-btn" @click="show=!show">快捷回复<span class="icon" :class="{'icon-open' :show}"></span></div>
     <div class="fast-replay-list" v-show="show">
-        <div class="item" v-for="item in list" @click="setReply(item.word)" >
+        <div class="item" v-for="(item,index) in list" :key="index" @click="setReply(item.word)" >
           <span v-if="item.word.length > 28" :title="item.word">{{item.word | wordFilter}}</span>
           <span v-if="item.word.length <= 28">{{item.word}}</span>
         </div>

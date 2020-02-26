@@ -9,7 +9,7 @@
 </template>
 
 <script type='text/babel'>
-  import getters from '../../../store/getters/loading.js'
+  import * as getters from '../../../store/getters/loading.js'
   export default {
     name: 'MyLoadingbar',
     vuex: {

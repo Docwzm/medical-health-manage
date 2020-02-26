@@ -32,7 +32,8 @@
               v-model="ageEnd">
       </el-input><el-select class="search_select" v-model="sex" placeholder="性别" clearable>
         <el-option
-                v-for="item in sexList"
+                v-for="(item,index) in sexList"
+                :key="index"
                 :label="item.label"
                 :value="item.value">
         </el-option>
@@ -46,27 +47,31 @@
     <div class="search-hidden" :class="{'search-hidden-show':searchShow}">
       <el-select class="search_select" v-model="sickType" placeholder="疾病" clearable>
         <el-option
-                v-for="item in sickTypeList"
+                v-for="(item,index) in sickTypeList"
+                :key="index"
                 :label="item.label"
                 :value="item.value">
         </el-option>
       </el-select><el-select class="search_select" v-model="doctorId" placeholder="所属医生" clearable>
         <el-option label="全部" value="0"></el-option>
         <el-option
-                v-for="item in doctorList"
+                v-for="(item,index) in doctorList"
+                :key="index"
                 :label="item.name"
                 :value="item.id">
         </el-option>
       </el-select><el-select class="search_select" v-model="patientSource" placeholder="来源渠道" clearable>
         <el-option
-                v-for="item in sourceList"
+                v-for="(item,index) in sourceList"
+                :key="index"
                 :label="item.label"
                 :value="item.value">
         </el-option>
       </el-select><el-select class="search-select search-select2" v-model="selectOrganId" placeholder="请选择所属机构" clearable>
       <el-option label="全部" value="0"></el-option>
       <el-option
-              v-for="item in organList"
+              v-for="(item,index) in organList"
+              :key="index"
               :label="item.name"
               :value="item.id">
       </el-option>

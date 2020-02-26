@@ -17,7 +17,7 @@
         <div class="chatBox" ref="rightBox" style="height: 800px">
           <div class="chatBoxBody" ref="chatBoxBody">
             <div v-if="!chat.session" class="loading"><span>加载中...</span></div>
-            <div class="msgBarBox" v-for="(msg,idx) in chat.messageList"
+            <div class="msgBarBox" v-for="(msg,idx) in chat.messageList" :key="idx"
                  :class="[msg.From_Account == doctor.id || msg.fromAccount == doctor.id?'right':'left']">
               <div class="cbDate" v-if="!!getDate(idx,msg)"><span>{{getDate(idx,msg)}}</span></div>
               <img class="headImg" v-if="msg.From_Account != doctor.id && msg.fromAccount != doctor.id"
@@ -78,9 +78,9 @@
         doctor: {},
         keyboard: '1',
         img: {
-          img: require('!!raw!../../../../../static/msgImg.svg'),
-          his: require('!!raw!../../../../../static/msgDate.svg'),
-          error: require('!!raw!../../../../../static/msgError.svg'),
+          img: require('!raw-loader!!../../../../../static/msgImg.svg'),
+          his: require('!raw-loader!!../../../../../static/msgDate.svg'),
+          error: require('!raw-loader!!../../../../../static/msgError.svg'),
         },
         ele: [],
       }

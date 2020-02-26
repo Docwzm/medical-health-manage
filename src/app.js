@@ -23,12 +23,10 @@ sync(store, router)
 // 现在我们可以启动应用了！
 // 路由器会创建一个 Root 实例，并且挂载到 body 元素上。
 // router.start(App, 'body')
-import {localStorage} from './store/localstorage.js'
 const app = new Vue({
   router,
   store,
-  ...App,
-  localStorage
+  ...App
 })
 
 app.$mount('#app')

@@ -8,7 +8,8 @@
 
                 <el-select v-model="value" :disabled="select_disabled" class="select" placeholder="请选择">
                     <el-option
-                            v-for="item in options"
+                            v-for="(item,index) in options"
+                            :key="index"
                             :label="item.label"
                             :value="item.value">
                     </el-option>

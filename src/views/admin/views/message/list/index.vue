@@ -20,7 +20,8 @@
         </el-date-picker>
         <el-select class="search-select" v-model="message_type" placeholder="请选择发送状态" clearable>
           <el-option
-                  v-for="item in typeList"
+                  v-for="(item,index) in typeList"
+                  :key="index"
                   :label="item.label"
                   :value="item.value">
           </el-option>
@@ -95,19 +96,19 @@
             <div class="item" v-if="messageDetailInfos.sendingReceivers != ''">
               <span class="label">发送中：</span>
               <div class="detail">
-                <span><span v-for="item in messageDetailInfos.sendingReceivers">{{item.receiverName}}，</span></span>
+                <span><span v-for="(item,index) in messageDetailInfos.sendingReceivers" :key="index">{{item.receiverName}}，</span></span>
               </div>
             </div>
           <div class="item" v-if="messageDetailInfos.succcessReceivers != ''">
             <span class="label">发送成功：</span>
             <div class="detail">
-              <span ><span v-for="item in messageDetailInfos.succcessReceivers">{{item.receiverName}}，</span></span>
+              <span ><span v-for="(item,index) in messageDetailInfos.succcessReceivers" :key="index">{{item.receiverName}}，</span></span>
             </div>
           </div>
           <div class="item" v-if="messageDetailInfos.failReceivers != ''">
             <span class="label">发送失败：</span>
             <div class="detail">
-              <span ><span v-for="item in messageDetailInfos.failReceivers">{{item.receiverName}}，</span></span>
+              <span ><span v-for="(item,index) in messageDetailInfos.failReceivers" :key="index">{{item.receiverName}}，</span></span>
             </div>
           </div>
             <div class="item">

@@ -4,7 +4,7 @@
 
 <template>
   <div class="message">
-    <div v-for="el in els()">
+    <div v-for="(el,index) in els()" :key="index">
       <div v-if="type(el) == 'TIMTextElem'" :style="{'line-height': `${getText(el).length > 52 ? '1.8' : '52px'}`}">{{getText(el)}}</div><!--文本消息-->
       <div v-if="type(el) == 'TIMImageElem'" class="img_box"><img :src="getIMG(el)" @click="showIMG(el)"></div><!--图片消息-->
       <div v-if="type(el) == 'TIMSoundElem'" class="sound_box" v-html="getAudio(el)"></div><!--语音消息-->

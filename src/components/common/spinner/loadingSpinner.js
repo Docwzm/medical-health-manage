@@ -1,10 +1,10 @@
-// vue-class
+import Vue from 'vue'
 import Component from 'vue-class-component'
 import { prop } from 'vue-property-decorator'
 import Loading from 'vue-spinner/src/BounceLoader.vue'
 
 @Component
-export default class LoadingSpinner {
+export default class LoadingSpinner extends Vue {
 
   @prop({
     type: Boolean,

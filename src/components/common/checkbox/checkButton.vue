@@ -5,8 +5,8 @@
 <template>
   <div class="buttonsBox">
     <el-button-group class="tabs">
-      <el-button :disabled="disabled" @click="set(b)" v-for="b in buttons"
-                 :class="{'active': b.key === value}">
+      <el-button :disabled="disabled" @click="set(b)" v-for="(b,index) in buttons"
+                 :class="{'active': b.key === value}" :key="index">
         {{b.name}}
       </el-button>
     </el-button-group>
